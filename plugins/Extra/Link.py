@@ -1,4 +1,3 @@
-# powered by Jisshu_bots and ZISHAN KHAN
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -12,7 +11,7 @@ async def generate_link(client, message):
         )
         return
     movie_name = command_text[1].replace(" ", "-")
-    link = f"https://telegram.me/NehaTestBot?start=getfile-{movie_name}"
+    link = f"https://telegram.me/Movie_DownIoad_bot?start=getfile-{movie_name}"
 
     await message.reply(
         text=f"Here is your link: {link}",
