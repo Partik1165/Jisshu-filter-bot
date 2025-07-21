@@ -16,9 +16,9 @@ def is_enabled(value, default):
 
 # Main
 SESSION = environ.get("SESSION", "Media_search")
-API_ID = int(environ.get("API_ID", "26565029"))
-API_HASH = environ.get("API_HASH", "2fb88485ac803b35fb959dddb45ff40c")
-BOT_TOKEN = environ.get("BOT_TOKEN", "7825109220:AAEad70mWptH_88xuW-y2AxK4ibYXUR6zSU")
+API_ID = int(environ.get("API_ID", ""))
+API_HASH = environ.get("API_HASH", "")
+BOT_TOKEN = environ.get("BOT_TOKEN", "")
 PORT = environ.get("PORT", "8082")
 
 # Owners
@@ -45,7 +45,7 @@ LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "-1002495186110"))
 LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "-1002495186110"))
 
 # MongoDB
-DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://Movie1215:Movie1215@cluster0.y5yx7w2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get("DATABASE_URI", "")
 DATABASE_NAME = environ.get("DATABASE_NAME", "Cluster0")
 
 # Files index database url
@@ -161,7 +161,7 @@ LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
 PROTECT_CONTENT = is_enabled("PROTECT_CONTENT", True)
 SPELL_CHECK = is_enabled("SPELL_CHECK", True)
 LINK_MODE = is_enabled("LINK_MODE", True)
-TMDB_API_KEY = environ.get("TMDB_API_KEY", "7915349ed68b69af11002f5ea38aa8c6")
+TMDB_API_KEY = environ.get("TMDB_API_KEY", "")
 
 # Online Streaming And Download
 STREAM_MODE = bool(environ.get("STREAM_MODE", True))  # Set True or Flase
