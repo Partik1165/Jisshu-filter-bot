@@ -50,7 +50,7 @@ UPDATE_CAPTION = """<b>𝖭𝖤𝖶 {} 𝖠𝖣𝖣𝖤𝖣 ✅</b>
 
 {}
 
-<blockquote>〽️ Powered by @Jisshu_bots</b></blockquote>"""
+<blockquote>〽️ Powered by @BotZ_Umesh</b></blockquote>"""
 
 QUALITY_CAPTION = """📦 {} : {}\n"""
 
@@ -124,7 +124,7 @@ async def queue_movie_file(bot, media):
         print(f"Error in queue_movie_file: {e}")
         if file_name in processing_movies:
             processing_movies.remove(file_name)
-        await bot.send_message(LOG_CHANNEL, f"Failed to send movie update. Error - {e}'\n\n<blockquote>If you don’t understand this error, you can ask in our support group: @Jisshu_support.</blockquote>")
+        await bot.send_message(LOG_CHANNEL, f"Failed to send movie update. Error - {e}'\n\n<blockquote>If you don’t understand this error, you can ask in our support group: @BotZ_Umesh.</blockquote>")
 
 async def send_movie_update(bot, file_name, files):
     try:
@@ -336,3 +336,4 @@ def format_file_size(size_bytes):
             return f"{size_bytes:.2f} {unit}"
         size_bytes /= 1024
     return f"{size_bytes:.2f} PB"
+
