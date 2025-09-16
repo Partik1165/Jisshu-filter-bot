@@ -174,7 +174,7 @@ async def start(client: Client, message):
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
         m = await message.reply_sticker(
-            "CAACAgUAAx0CZz_GMwACMBdnXZA4SejgJ6a_0TrNzOfn9ImI_QACNwsAArT4iFVaZPJf8ldVVh4E"
+            "CAACAgIAAxkBAAEBAAFwZ4tq3I31YhWmfRa1pUIldJcyqRIAAiAmAAJzs-FKip2fziZczzg2BA"
         )
         await asyncio.sleep(1)
         await m.delete()
@@ -1011,7 +1011,7 @@ async def set_shortner(c, m):
         return await m.reply_text("<b>ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴅᴍɪɴ ɪɴ ᴛʜɪꜱ ɢʀᴏᴜᴘ</b>")
     if len(m.text.split()) == 1:
         await m.reply(
-            "<b>Use this command like this - \n\n`/set_shortner tnshort.net 9bccb0b14ed6841652fa22d3481907788c1b8838`</b>"
+            "<b>Use this command like this - \n\n`/set_shortner tnshort.net XXXXXXXXXXXXXfa22d3481907788c1b8838`</b>"
         )
         return
     sts = await m.reply("<b>♻️ ᴄʜᴇᴄᴋɪɴɢ...</b>")
@@ -1062,7 +1062,7 @@ async def set_shortner_2(c, m):
         return await m.reply_text("<b>ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴅᴍɪɴ ɪɴ ᴛʜɪꜱ ɢʀᴏᴜᴘ</b>")
     if len(m.text.split()) == 1:
         await m.reply(
-            "<b>Use this command like this - \n\n`/set_shortner_2 tnshort.net 9bccb0b14ed6841652fa22d3481907788c1b8838`</b>"
+            "<b>Use this command like this - \n\n`/set_shortner_2 tnshort.net XXXXXXXXXXXXXXXXXd3481907788c1b8838`</b>"
         )
         return
     sts = await m.reply("<b>♻️ ᴄʜᴇᴄᴋɪɴɢ...</b>")
@@ -1112,7 +1112,7 @@ async def set_shortner_3(c, m):
         )
     if len(m.text.split()) == 1:
         return await m.reply(
-            "<b>Use this command like this - \n\n`/set_shortner_3 tnshort.net 9bccb0b14ed6841652fa22d3481907788c1b8838`</b>"
+            "<b>Use this command like this - \n\n`/set_shortner_3 tnshort.net XXXXXXXXXXXXXXXXXX481907788c1b8838`</b>"
         )
     sts = await m.reply("<b>♻️ ᴄʜᴇᴄᴋɪɴɢ...</b>")
     await sts.delete()
@@ -1125,7 +1125,7 @@ async def set_shortner_3(c, m):
         return await m.reply_text("<b>ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴅᴍɪɴ ɪɴ ᴛʜɪꜱ ɢʀᴏᴜᴘ</b>")
     if len(m.command) == 1:
         await m.reply_text(
-            "<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴀᴅᴅ sʜᴏʀᴛɴᴇʀ & ᴀᴘɪ\n\nᴇx - `/set_shortner_3 mdiskshortner.link e7beb3c8f756dfa15d0bec495abc65f58c0dfa95`</b>",
+            "<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴀᴅᴅ sʜᴏʀᴛɴᴇʀ & ᴀᴘɪ\n\nᴇx - `/set_shortner_3 mdiskshortner.link XXXXXXXXXXXXXXXXbec495abc65f58c0dfa95`</b>",
             quote=True,
         )
         return
@@ -1547,3 +1547,4 @@ async def reset_group_command(client, message):
     reply_markup = InlineKeyboardMarkup(btn)
     await save_default_settings(grp_id)
     await message.reply_text("ꜱᴜᴄᴄᴇꜱꜱғᴜʟʟʏ ʀᴇꜱᴇᴛ ɢʀᴏᴜᴘ ꜱᴇᴛᴛɪɴɢꜱ...")
+
