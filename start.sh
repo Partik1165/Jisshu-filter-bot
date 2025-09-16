@@ -6,7 +6,7 @@ else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /UMESH-BOT
 fi
-cd /Jisshu-filter-bot
+cd /UMESH-BOT
 pip3 install -U -r requirements.txt
-echo "Starting Jisshu filter bot...."
+echo "Starting filter bot...."
 python3 bot.py
