@@ -40,9 +40,9 @@ CHANNELS = [
 # ForceSub Channel & Log Channels
 AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", "-1002441486687"))
 AUTH_REQ_CHANNEL = int(environ.get("AUTH_REQ_CHANNEL", "-1002441486687"))
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1003031308238"))
-LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "-1003031308238"))
-LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "-1003031308238"))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002495186110"))
+LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "-1002495186110"))
+LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "-1002495186110"))
 
 # MongoDB
 DATABASE_URI = environ.get("DATABASE_URI", "")
