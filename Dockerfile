@@ -1,7 +1,6 @@
 FROM python:3.10.8-slim-buster
 
 WORKDIR /UMESH-BOT
-RUN chmod 777 /UMESH-BOT
 
 RUN apt update && apt install -y --no-install-recommends git \
     && rm -rf /var/lib/apt/lists/*
