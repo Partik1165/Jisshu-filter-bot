@@ -8,5 +8,5 @@ else
 fi
 cd /UMESH-BOT
 pip3 install -U -r requirements.txt
-echo "Starting Jisshu filter bot...."
+echo "Starting Filter bot...."
 python3 bot.py
